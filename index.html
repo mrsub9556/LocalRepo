@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Google clone shubham</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    
+      size: 24px;
+    }
+    .container {
+      margin-top: 150px;
+    }
+
+    .logo {
+      font-size: 60px;
+      color: #171d0591;
+    }
+
+    input {
+      width: 400px;
+      padding: 12px;
+      border-radius: 25px;
+      border: 2px solid #151515;
+      outline: none;
+      margin-top: 20px;
+    }
+    
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      background-color: #0cc6d3;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #cfd9ce;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="logo
+    ">Google</h1>
+
+    <input type="text" id="searchBox" placeholder="Search Google Ask Google">
+
+    <div class="buttons">
+      <button onclick="searchGoogle()">Google Search</button>
+      <button onclick="feelingLucky()">I'm Feeling Lucky</button>
+    </div>
+  </div>
+
+  <script>
+    function searchGoogle() {
+      let query = document.getElementById("searchBox").value;
+      if (query) {
+        window.location.href = "https://www.google.com/search?q=" + query;
+      }
+    }
+
+    function feelingLucky() {
+      let query = document.getElementById("searchBox").value;
+      if (query) {
+        window.location.href = "https://www.google.com/search?btnI=I&q=" + query;
+      }
+    }
+  </script>
+
+</body>
+</html>
